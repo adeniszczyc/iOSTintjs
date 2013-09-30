@@ -7,6 +7,9 @@
 			        }
 
 			    };
+			    var el = {
+			    	body: $("body")
+			    };
 			    var isiosSeven = function() {
 			    	var userAgent = navigator.userAgent;
 			    	var search = userAgent.match(/(iPad|iPhone);.*CPU.*OS 7_\d/i);
@@ -18,20 +21,24 @@
 			    	}
 			    };
 			   	var switchBackground = function(color) {
-			   		 var background = $("body").css("background-color");
-			  		 
-			   		 if (background == "rgba(0, 0, 0, 0)") {
-			   		 	background = "rgba(255, 255, 255, 1)";
+			   		 var background = el.body.css("background");
+			   		 var background_color = el.body.css("background-color");
+			  		 var background_image =  el.body.css("background-image");
+
+			   		 if (background_color == "rgba(0, 0, 0, 0)") {
+			   		 	background_color = "rgba(255, 255, 255, 1)";
 			   		 }
 			   		 console.log(background);
-			   		 $("body").css("background-image", "linear-gradient(to bottom, " + background + " 0%, " + background + " 100%)");
-					 $("body").css("background-color", color);
+			   		 el.body.css("background-image", background_image  + ", linear-gradient(to bottom, " + background_color + " 0%, " + background_color + " 100%)");
+					 el.body.css("background-color", color);
 
 			   		 var t = setTimeout(function() {
-			   		 	$("body").css("background-color", background);
+			   		 	el.body.css("background", background);
+			   		 	el.body.css("background-color", background_color);
+			   		 	el.body.css("background-image", background_image);
 
-			   		 }, 50);
+			   		 }, 100);
 			   	}
-			   	init();
+			   	init(color);
 			};
 })(jQuery);

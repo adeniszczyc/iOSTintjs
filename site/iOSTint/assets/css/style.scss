@@ -1,0 +1,60 @@
+/* Write your CSS! */
+
+
+$font:  'PT Sans Caption', sans-serif;
+html {
+  height: 100%;
+}
+body {
+	font-family: $font;
+	max-width:1000px;
+	margin:auto;
+	text-align:center;
+	padding:150px 0 0 0;
+}
+h1 {
+	font-size:28px;
+	font-weight:400;
+	padding:20px 0 50px 0;
+}
+img {
+	width:70%;
+	padding:20px 0 50px 0;
+}
+p {
+	font-size:15px;
+	line-height:25px;
+	color:rgba(0,0,0,0.8);
+	width:40%;
+	margin:auto;
+}
+.button-bar {
+	margin:50px 0 0 0;
+}
+.button {
+	text-transform:none;
+	text-decoration:none;
+	border:1px solid #000000;
+	padding:10px 20px 10px 20px;
+	border-radius:5px;
+	color:#000000;
+	margin:5px;
+
+	-webkit-transition:all 0.2s;
+}
+.button.hover-black {
+	border:1px solid #000000;
+}
+.button.hover-twitter {
+	border:1px solid #00acee;
+	color:#00acee;
+}
+.button.hover-black:hover {
+	background:#000000;
+	color:#ffffff;
+}
+.button.hover-twitter:hover {
+	background:#00acee;
+	color:#ffffff;
+
+}
