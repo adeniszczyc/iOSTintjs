@@ -20,7 +20,7 @@ A demo this plugin can be found [here](http://andrewdeniszczyc.com/iostintjs/ "a
 
 ### Credits
 
-- Plugin developed by Andrew Deniszczyc
+- Plugin developed by [Andrew Deniszczyc](https://andrewdeniszczyc.com "Andrew Deniszczyc")
 - [Original technique](http://www.mobilexweb.com/blog/safari-ios7-html5-problems-apis-review "Original technique") by Max Firtman.
 
 ### Contact
