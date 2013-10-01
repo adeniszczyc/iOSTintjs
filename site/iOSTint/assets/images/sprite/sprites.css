@@ -1,0 +1,28 @@
+.blue, .green, .red, .yellow{
+	background: url(sprites.png) no-repeat;
+}
+
+.blue{
+	background-position: -1px 0;
+	width: 640px;
+	height: 126px;
+}
+
+.green{
+	background-position: -1px -131px ;
+	width: 640px;
+	height: 126px;
+}
+
+.red{
+	background-position: -1px -263px ;
+	width: 640px;
+	height: 126px;
+}
+
+.yellow{
+	background-position: 0 -396px ;
+	width: 640px;
+	height: 126px;
+}
+

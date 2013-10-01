@@ -1,13 +1,28 @@
 <!-- @include _header -->
 
-  <section>
-    <h1>iOS Header Tint</h1>
-    <img src="<!-- @path 1.jpg -->" />
-    <p>A jQuery plugin to change the Safari URL bar tint colour on iOS7.</p>
-    <div class="button-bar">
-    	<a href="#" class="button hover-black">Github</a>
-    	<a href="#" class="button hover-twitter">Twitter</a>
-    </div>
+  <section class>
+  	<div class="content">
+	    <h1>iOSTint.js</h1>
+		<p>A jQuery plugin to change the Safari URL bar tint colour on iOS7.</p>
+	</div>
+    <div class="urlbar main-color"></div>
+    <div class="content">
+	    <ol class="list">
+	    	<li>Download the file from <a href="https://raw.github.com/adeniszczyc/iOSTintjs/master/plugin/iosTint.min.js">here</a>, and include it, along with jQuery, at the bottom of your HTML.
+	    		<code class="block main-color">&lt;script src=&quot;http://code.jquery.com/jquery-1.10.2.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/iosTint.min.js&quot;&gt;&lt;/script&gt;</code>
+	    	</li>
+	    	<li>Call the script beneath the include.
+	    		<code class="block main-color">&lt;script&gt;
+    $.iosTint(color);
+&lt;/script&gt;</code>
+				You can replace color with any valid html colour such as  <code class="color-blue">#69BEE5</code> ,  <code class="color-green">rgb(144,248,67)</code> or even <code class="color-tomato">tomato</code> .</li>
+
+	    </ol>
+	    <div class="button-bar">
+	    	<a href="https://github.com/adeniszczyc/iOSTintjs" class="button hover-black">Github</a>
+	    	<a href="https://twitter.com/adeniszczyc" class="button hover-twitter">Twitter</a>
+	    </div>
+	</div>
   </section>
-  
 <!-- @include _footer -->
